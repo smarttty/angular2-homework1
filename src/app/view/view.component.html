@@ -1,0 +1,15 @@
+<div class="activity-row">
+  <div class="activity-desc" *ngIf="restaurant">
+    <h5>{{restaurant.name}}</h5>
+    <p>{{restaurant.address}}</p>
+    <h6>{{restaurant.phone}}</h6>
+  </div>
+  <div class="activity-img">
+    <ul>
+      <li>
+        <img [src]="restaurant.image_url" alt=""/>
+      </li>
+    </ul>
+  </div>
+  <div class="clear"> </div>
+</div>

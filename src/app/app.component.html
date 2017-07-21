@@ -1,0 +1,13 @@
+<h1>
+  Hot Weather Widget
+</h1>
+<div class="element">
+  <app-left-element (changed)="set($event)"></app-left-element>
+  <div class="element-right">
+    <app-weather [restaurant]="selected_place"></app-weather>
+    <app-info [restaurant]="selected_place"></app-info>
+    <div class="clear"></div>
+  </div>
+  <div class="clear"></div>
+</div>
+
